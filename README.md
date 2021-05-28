@@ -1,7 +1,7 @@
 # COVwin Vaccine Slot Notifier
 ## Description
 + This python program displays the available vaccination slots in all centers of a preferred district for the next 7 days.
-+ It sends the output in the telegram channel created.
++ It sends the output to the telegram channel created.
 ## Requirements
 + A text editor
 + A Telegram bot
