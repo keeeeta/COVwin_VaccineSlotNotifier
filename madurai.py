@@ -12,7 +12,7 @@ p=0
 
 
     
-api = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=540&date='+str(d)
+api = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=<YOUR_DISTRICT_ID>&date='+str(d)
 ap= api+str(d)
 r= requests.get(ap,headers=headers).json()   
 centers = r['centers']
@@ -21,7 +21,7 @@ for c in centers:
     sess=c['sessions']
     res=''
     for s in sess:
-        #if s['available_capacity_dose1'] > 0 or s['available_capacity_dose2'] >0 :
+        if s['available_capacity_dose1'] > 0 or s['available_capacity_dose2'] >0 :
             res+="DATE: "+str(s['date'])+"\n"
             res+="VACCINE : "+str(s['vaccine'])+"\n"
             res+="MINIMUN AGE: "+str(s['min_age_limit'])+"\n"                
@@ -40,7 +40,7 @@ for c in centers:
             res+="\n"
             res+="----------------------------------------\n\n"
     
-    url='https://api.telegram.org/bot1778379030:AAEVkPPfKyGIMRq-BVvL4dlqi8WXom5FShc/sendMessage?chat_id=-504610086&text={}'.format(res)  
+    url='https://api.telegram.org/bot<BOT_TOKEN>/sendMessage?chat_id=<CHAT_ID>&text={}'.format(res)  
     requests.get(url,headers=headers)  
     time.sleep(3)   
     
