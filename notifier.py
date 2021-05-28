@@ -4,14 +4,8 @@ import requests
 import time
 import json
 
-headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36 Edg/90.0.818.62'}
-d = date.today().strftime("%d-%m-%Y")
-
-p=0
-
-
-    
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36 Edg/90.0.818.62'}
+d = date.today().strftime("%d-%m-%Y")   
 api = 'https://cdn-api.co-vin.in/api/v2/appointment/sessions/public/calendarByDistrict?district_id=<YOUR_DISTRICT_ID>&date='+str(d)
 ap= api+str(d)
 r= requests.get(ap,headers=headers).json()   
@@ -41,4 +35,7 @@ for c in centers:
     
     url='https://api.telegram.org/bot<BOT_TOKEN>/sendMessage?chat_id=<CHAT_ID>&text={}'.format(res)  
     requests.get(url,headers=headers)  
-    time.sleep(3)  
+    time.sleep(3) 
+end_creds = "\nGet vaccinated !! \nWear a mask !! \nMain social distancing !! \nLet's beat the corona virus !!\n"
+url2='https://api.telegram.org/bot<BOT_TOKEN>/sendMessage?chat_id=<CHAT_ID>&text={}'.format(res)  
+requests.get(url2,headers=headers) 
