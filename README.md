@@ -28,3 +28,5 @@ https://apisetu.gov.in/public/api/cowin
 + In the **9th** line you need to replace the `<DISTRICT_ID` with your district's ID which you refered from the API setu website
 + In the **36th** and **40th** lines you need to replace `<BOT_TOKEN>` and `<CHAT_ID>` with your corresponding bot's ID and the channel's ID which you have created.
 + Save the changes and execute it in your command prompt by using the following command `python notifier.py`
+## Sample output
+
