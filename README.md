@@ -1,4 +1,4 @@
-# OVwin Vaccine Slot Notifier
+# COVwin Vaccine Slot Notifier
 ## Description
 + This python program displays the available vaccination slots in all centers of a preferred district for the next 7 days.
 + It sends the output in the telegram channel created.
@@ -16,13 +16,12 @@
 ### Obtaining Telegram's channel id
 + Create a telegram channel and add your bot which you created into the channel
 + Open your browser and enter the following link 
-https://api.telegram.org/bot<BOT_TOKEN>/getUpdates
+`https://api.telegram.org/bot<BOT_TOKEN>/getUpdates`
 + Extract your channel's id and save it for using it in *notifier.py* file
 ## API info
 + I have used it from API setu
 + In order to determine your state's ID and district's ID refer it from 
 https://apisetu.gov.in/public/api/cowin
-[Github](https://apisetu.gov.in/public/api/cowin)
 + Note your state ID and district ID. We will be using it in *notifier.py*
 ## Execution
 
