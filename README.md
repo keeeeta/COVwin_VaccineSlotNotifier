@@ -10,14 +10,15 @@
 + Open your telegram app and search for BotFather
 ![Screenshot1](https://github.com/keeeeta/COVwin_VaccineSlotNotifier/blob/main/screenshots/photo_2021-05-28_10-59-15.jpg)
 + Enter into the BotFather by selecting start and you will be provided with the list of services provided by it
-![Screenshot2]
+![Screenshot2](https://github.com/keeeeta/COVwin_VaccineSlotNotifier/blob/main/screenshots/photo_2021-05-28_10-58-58.jpg)
 + Enter the command `/newbot` and you will be prompted for the name and the id for the bot. Once provided with the information you will be receiving the acknowledgement for the creation of the bot along with the bot token. Save your bot token as it will be used inside the *notifier.py* file
-![Screenshot3]
+![Screenshot3](https://github.com/keeeeta/COVwin_VaccineSlotNotifier/blob/main/screenshots/photo_2021-05-28_10-59-05.jpg)
 ### Obtaining Telegram's channel id
 + Create a telegram channel and add your bot which you created into the channel
 + Open your browser and enter the following link 
 `https://api.telegram.org/bot<BOT_TOKEN>/getUpdates`
 + Extract your channel's id and save it for using it in *notifier.py* file
+![Screenshot4](https://github.com/keeeeta/COVwin_VaccineSlotNotifier/blob/main/screenshots/recent1.PNG)
 ## API info
 + I have used it from API setu
 + In order to determine your state's ID and district's ID refer it from 
