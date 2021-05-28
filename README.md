@@ -29,4 +29,5 @@ https://apisetu.gov.in/public/api/cowin
 + In the **36th** and **40th** lines you need to replace `<BOT_TOKEN>` and `<CHAT_ID>` with your corresponding bot's ID and the channel's ID which you have created.
 + Save the changes and execute it in your command prompt by using the following command `python notifier.py`
 ## Sample output
+![Screenshot5](https://github.com/keeeeta/COVwin_VaccineSlotNotifier/blob/main/screenshots/recent2.PNG)
 
